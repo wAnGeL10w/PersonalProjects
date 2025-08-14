@@ -56,6 +56,7 @@ def validedad():
 
 def validtel():
     while True:
+        #Solicito la fecha en el formato indicado
         tel=input("Escribe el numero en el formato XX-XXXX-XXXX\n")
         pat=re.compile(r"\d{2}-\d{4}-\d{4}")
         if re.match(pat,tel):
@@ -118,7 +119,7 @@ def validestado():
     "COLIMA": "CM",
     "CHIAPAS": "CS",
     "CHIHUAHUA": "CH",
-    "CIUDAD DE MEXICO": "DF",  # Antes D.F., todavía así en CURP
+    "CIUDAD DE MEXICO": "DF",
     "DURANGO": "DG",
     "GUANAJUATO": "GT",
     "GUERRERO": "GR",
@@ -146,7 +147,7 @@ def validestado():
     "NACIDO EN EL EXTRANJERO": "NE"
 }
     while True:
-        estado=input("Escribe el estado en mayusculas: ").strip().upper()
+        estado=input("Escribe el estado en mayusculas sin acentos: ").strip().upper()
         #Si el estado pertenece al diccionario de estados
         if estado in entidades_curp:
             #Guardo su clave para usarla después para validar el CURP
@@ -173,6 +174,7 @@ def validsexo():
             print("Género no valido, intente de nuevo\n")
     return cve_sexo
 
+#Me falta completar y mejorar esta función
 def validcurp(nombre,fecha):
     exep_noms=["de","del","la","el"]
     estados=[]
