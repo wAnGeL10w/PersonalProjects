@@ -1,0 +1,5 @@
+Gracias por mostrar interés en mi proyecto. Debido a que el lenguaje
+de programación usado es algo antiguo, realicé un reporte con capturas,
+y codigo copiado de los botones y formularios usados. En un futuro añadiré
+más información para que pueda ser más entendible. El reporte es un archivo
+Word, muchas gracias :).
